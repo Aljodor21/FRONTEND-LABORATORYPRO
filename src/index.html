@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratory Pro</title>
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="/src/css/output.css" />
+
+    <!--Fuentes de nuestros proyectos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!--Cuerpo de nuestro proyecto-->
+  <body class="font-principal">
+
+    <!--Sección de barra de navegación y header de nuestra pagina de modo responsive -->
+    <header>
+
+        <!--Barra de navegación-->
+        <nav class="h-20 flex wrapper items-center justify-between ">
+
+            <!--Icono de barra de navegación-->
+            <a href="./" class="w-1/3 max-w-[140px]">
+                <img src="./images/logo.svg" alt="" class="w-full">
+            </a>
+
+            <input type="checkbox" id="menu" class="peer hidden">
+
+            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
+
+            <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none">
+
+                <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                        
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Community</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <a class="button shadow-sm shadow-bright-red/30 hidden py-3 lg:block"  href="#">Get Started</a>
+        </nav>
+    </header>
+        
+
+    <!--Sección principal de nuestra pagina hero-->
+    <section class="wrapper grid gap-8 justify-items-center items-center pb-12 md:grid-cols-2 md:py-24 ">
+
+        <img src="./images/illustration-intro.svg" alt="" class="w-full max-w-lg md:order-1"> 
+
+        <article class="text-center space-y-6 md:text-left md:space-y-8">
+
+            <h1 class="text-4xl font-bold text-very-dark-blue md:text-5xl">
+                Bring everyone together to build better products.
+            </h1>
+
+            <p class="text-dark-grayish-blue">
+                Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+            </p>
+            <a href="#" class="mx-auto button shadow-xl shadow-bright-red/30 md:mx-0">
+                Get Started
+            </a>
+        </article>
+    </section>
+
+  </body>
+</html>
