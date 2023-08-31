@@ -22,69 +22,249 @@
 
     <!--Sección de barra de navegación y header de nuestra pagina de modo responsive -->
     <header>
+      <!--Barra de navegación-->
+      <nav class="h-20 flex wrapper items-center justify-between">
+        <!--Icono de barra de navegación-->
+        <a href="./" class="w-1/3 max-w-[140px]">
+          <img src="./images/logo.svg" alt="" class="w-full" />
+        </a>
 
-        <!--Barra de navegación-->
-        <nav class="h-20 flex wrapper items-center justify-between ">
+        <input type="checkbox" id="menu" class="peer hidden" />
 
-            <!--Icono de barra de navegación-->
-            <a href="./" class="w-1/3 max-w-[140px]">
-                <img src="./images/logo.svg" alt="" class="w-full">
-            </a>
+        <label
+          for="menu"
+          class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"
+        ></label>
 
-            <input type="checkbox" id="menu" class="peer hidden">
+        <div
+          class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform z-40 md:static md:translate-x-0 md:bg-none "
+        >
+          <ul
+            class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static"
+          >
+            <li>
+              <a href="#">Inicio</a>
+            </li>
 
-            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
+            <li>
+              <a href="#">Acerca de</a>
+            </li>
 
-            <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none">
+            <li>
+              <a href="#">Sobre nosotros</a>
+            </li>
 
-                <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
+            <li>
+              <a href="#">Comunidad</a>
+            </li>
 
-                    <li>
-                        <a href="#">Product</a>
-                    </li>
+            <li>
+              <a href="#">Proyectos</a>
+            </li>
 
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                        
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
+            <li>
+              <a href="#">Perfil</a>
+            </li>
 
-                    <li>
-                        <a href="#">Community</a>
-                    </li>
-                </ul>
+          </ul>
+        </div>
+
+        <a
+          class="button shadow-sm shadow-bright-red/30 hidden py-3 lg:block"
+          href="#"
+          >Ingresar</a
+        >
+      </nav>
+
+      <!--Sección principal de nuestra pagina hero-->
+      <section
+        class="wrapper grid gap-8 justify-items-center items-center pb-12 md:grid-cols-2 md:py-24"
+      >
+        <img
+          src="./images/illustration-intro.svg"
+          alt=""
+          class="w-full max-w-lg md:order-1"
+        />
+
+        <article class="text-center space-y-6 md:text-left md:space-y-8">
+          <h1 class="text-4xl font-bold text-very-dark-blue md:text-5xl">
+            Semillero de investigación en ingenieria de software.
+          </h1>
+
+          <p class="text-dark-grayish-blue">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <a
+            href="#"
+            class="mx-auto button shadow-xl shadow-bright-red/30 md:mx-0"
+          >
+            Ingresar
+          </a>
+        </article>
+      </section>
+
+    </header>
+
+    <!--Section con figura de fondo para dar mas estilo a la pagina-->
+    <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img src="./images/bg-tablet-pattern.svg" class="absolute w-full -z-10 -top-24 -right-1/4 max-w-2xl" alt="">
+    </figure>
+
+    <!--Sección main de nuestra pagina, donde va a estar la información fundamental de nuestra pagina-->
+    <main>
+
+        <!--En esta sección creamos la importancia de nuestro software y que hacemos de diferente a los demas-->
+        <section class="wrapper text-center py-24 grid gap-12 md:grid-cols-2 md:text-left ">
+
+            <!--Titulo de nuestra sección-->
+            <article>
+                <h2 class="text-3xl font-bold text-very-dark-blue mb-6 md:text-4xl">What`s different about Manage?</h2>
+                <p class="text-dark-grayish-blue">
+                    Manage provides all the funcionality your team needs, without the complexity. Our software is tailor-made for moden digital product teams.
+                </p>
+            </article>
+
+            <!--Contenedor de nuestros articulos de importancia-->
+            <div class="grid gap-12">
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">01</span>
+                        <span class="flex-1 p-2">Track company-wide progress</span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left">
+                        See how your day-to-day tasks fit into the winder vision. Go from tracking progress at the milestone level all the way done to the samllest of details. Never lose sight of the bigger picture again.
+                    </p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">02</span>
+                        <span class="flex-1 p-2">Advance built-in reports</span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left">
+                        See how your day-to-day tasks fit into the winder vision. Go from tracking progress at the milestone level all the way done to the samllest of details. Never lose sight of the bigger picture again.
+                    </p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+
+                    <p class="bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent">
+                        <span class="bg-bright-red text-white px-6 rounded-full py-2">03</span>
+                        <span class="flex-1 p-2">Everything you need in one place</span>
+                    </p>
+
+                    <p class="text-dark-grayish-blue text-left">
+                        See how your day-to-day tasks fit into the winder vision. Go from tracking progress at the milestone level all the way done to the samllest of details. Never lose sight of the bigger picture again.
+                    </p>
+                </article>
 
             </div>
 
-            <a class="button shadow-sm shadow-bright-red/30 hidden py-3 lg:block"  href="#">Get Started</a>
+        </section>
+
+        <!--En esta sección vamos a hablar un poco de quien es el director de nuestro semillero y lo vamos a presentar en una pequeña imagen-->
+        <section class="wrapper text-center py-24 max-w-lg mx-auto md:max-w-xl">
+
+            <h2 class="text-3xl font-bold text-very-dark-blue md:text-4xl">
+                 What they´ve said   
+            </h2>
+
+            <div class="mt-24 mb-14">
+
+                <article class="bg-vary-light-gray pt-16 pb-12 px-4 relative ">
+
+                    <img src="./images/avatar-richard.png" alt="" class="absolute w-24 aspect-square -top-12 inset-x-0 mx-auto">
+
+                    <h3 class="text-xl mb-4 pt-2 font-bold text-very-dark-blue">Jorge Eliecer</h3>
+                    <p class="text-dark-grayish-blue">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cum, tempore laborum assumenda veritatis aut. Impedit, excepturi, illum eligendi itaque tenetur ullam doloremque laudantium incidunt optio asperiores cum deserunt quas? "</p>
+                </article>
+
+            </div>
+
+            <a class="button mx-auto shadow-xl shadow-bright-red/30" href="">Ingresar</a>
+        </section>
+
+        <!--En esta sección damos un mensaje de motivación para el registro de estudiantes en el semillero-->
+        <section class="bg-bright-red font-bold">
+
+            <div class="wrapper py-24 text-center grid gap-6 md:grid-cols-[40%_40%] md:justify-between md:items-center md:text-left">
+
+                <h2 class="text-4xl text-very-pale-red">
+                    Haz parte de este grupo de manera sencilla y empieza a generar proyectos
+                </h2>
+
+                <a href="" class="button text-bright-red bg-vary-light-gray mx-auto md:mx-0 md:justify-self-end">Ingresar</a>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!--En esta sección creamos el footer de nuestra pagina-->
+    <footer class="bg-very-dark-blue py-24">
+
+      <section class="wrapper grid gap-12 justify-items-center footer-area md:footer-area-md md:grid-cols-3 md:justify-items-stretch">
+
+        <!--Formularios de actualización de noticias-->
+        <form action="" class="flex gap-4 w-full min-w-[100px] [grid-area:form]">
+
+          <input type="email" placeholder="Actualizaciones en tu email..." class="min-w-[50px] flex-1 rounded-full px-4">
+
+          <input type="submit" value="Enviar" class="py-3 px-8 bg-bright-red rounded-full text-white">
+        </form>
+
+        <!--Navegación del footer-->
+        <nav class="grid grid-cols-[max-content_max-content] gap-y-4 justify-between text-white w-4/5 [grid-area:navigation] md:w-full">
+          <a href="">Inicio</a>
+          <a href="">Acerca de</a>
+          <a href="">Sobre nosotros</a>
+          <a href="">Comunidad</a>
         </nav>
-    </header>
-        
 
-    <!--Sección principal de nuestra pagina hero-->
-    <section class="wrapper grid gap-8 justify-items-center items-center pb-12 md:grid-cols-2 md:py-24 ">
+        <!--Redes sociales media-->
+        <div class="flex flex-wrap gap-4 justify-between w-full [grid-area:social-media]">
 
-        <img src="./images/illustration-intro.svg" alt="" class="w-full max-w-lg md:order-1"> 
+          <a href="">
+            <img src="./images/icon-facebook.svg" alt="" class="w-8">
 
-        <article class="text-center space-y-6 md:text-left md:space-y-8">
+            
+          </a>
+          <a href="">
+            <img src="./images/icon-instagram.svg" alt="" class="w-8">
 
-            <h1 class="text-4xl font-bold text-very-dark-blue md:text-5xl">
-                Semillero de investigación en ingenieria de software.
-            </h1>
+            
+          </a>
+          <a href="">
+            <img src="./images/icon-pinterest.svg" alt="" class="w-8">
 
-            <p class="text-dark-grayish-blue">
-                Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-            </p>
-            <a href="#" class="mx-auto button shadow-xl shadow-bright-red/30 md:mx-0">
-                Get Started
-            </a>
-        </article>
-    </section>
+            
+          </a>
+          <a href="">
+            <img src="./images/icon-twitter.svg" alt="" class="w-8">
+
+            
+          </a>
+          <a href="">
+            <img src="./images/icon-youtube.svg" alt="" class="w-8">
+          </a>
+        </div>
+
+        <!--Logo de footer-->
+        <a href="" class="[grid-area:logo] ">
+          <img src="./images/logo.svg" alt="">
+        </a>
+
+        <!--Derechos reservados-->
+        <p class="text-dark-grayish-blue text-center [grid-area:copy] md:text-right">Copyright 2023. All Rights Reserved</p>
+
+      </section>
+    </footer>
 
   </body>
 </html>
