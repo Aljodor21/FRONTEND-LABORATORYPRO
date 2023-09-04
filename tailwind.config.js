@@ -15,8 +15,8 @@ module.exports = {
         "vary-light-gray": "hsl(0, 0%, 98%)"
       },
       backgroundImage :{
-        "close-menu":"url('../images/icon-close.svg')",
-        "open-menu":"url('../images/icon-hamburger.svg')"
+        "close-menu":"url('../images/inicio/icon-close.svg')",
+        "open-menu":"url('../images/inicio/icon-hamburger.svg')"
       }
     },
     

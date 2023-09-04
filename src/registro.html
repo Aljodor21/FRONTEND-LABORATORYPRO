@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <!--Fuentes de nuestros proyectos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-principal">
+
+    <section class="bg-dark-grayish-blue/20 min-h-screen flex items-center justify-center">
+
+        <!--Contenedor del login-->
+        <div class="bg-dark-blue/20 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center" >
+            
+            <!--Formulario de login-->
+            <div class="md:w-1/2 px-16">
+
+                <div class="flex gap-4">
+                    <h2 class="font-bold text-2xl text-bright-red ">
+                        Registro
+                    </h2>
+                    
+                    <a href="./index.html" class="w-1/2 h-1/2 py-2.5">
+                        <img  src="./images/inicio/logo.png" alt="" >
+                    </a>
+                </div>
+                <p class="text-sm mt-4 text-bright-red">
+                    Si no eres un miembro puedes registrarte
+                </p>
+
+                <!--Formulario que va al backend para comprobar que si este registrado-->
+                <form action="" class="flex flex-col gap-4">
+
+                    <input type="text" name="name" placeholder="Nombre" class="p-2 mt-8 rounded-xl border" required>
+
+                    <input type="email" name="email" placeholder="Correo" class="p-2 rounded-xl border" required>
+
+                    <input type="password" name="password" placeholder="Contraseña" class="p-2 rounded-xl w-full border" required>
+
+                    <button type="submit" class="bg-bright-red text-white py-2 hover:scale-105 duration-300 rounded-xl">
+                        Registrar
+                    </button>
+                </form>
+
+                <div class="mt-10 grid grid-cols-3 items-center text-dark-grayish-blue">
+                    <hr class="border-dark-grayish-blue">
+                    <p class="text-center text-sm">O</p>
+                    <hr class="border-dark-grayish-blue">
+                </div>
+
+                <div class=" text-xs flex justify-between items-center border-b border-dark-grayish-blue">
+                    <p class="text-xs  py-4 ">
+                        Ya tienes una cuenta?
+                    </p>
+                    <a href="./login.html">
+                        <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300">
+                            Iniciar
+                        </button>
+                    </a>
+                    
+                </div>
+                
+
+                
+            </div>
+
+            <!--Imagen del login-->
+            <div class="md:block hidden w-1/2 p-5">
+                <img class=" rounded-2xl" src="./images/login/login.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+  </body>
+</html>
