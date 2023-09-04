@@ -6,64 +6,51 @@
 
 	<!-- Iconos necesarios para la pagina -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<!-- My CSS -->
+	<!-- My CSS personalizado-->
 	<link rel="stylesheet" href="/src/css/admin.css">
 
-	<title>AdminHub</title>
+	<!--Css tailwindcss-->
+	<link rel="stylesheet" href="/src/css/output.css">
+
+	<title>Administrador</title>
 </head>
 <body>
 
 
 	<!-- SIDEBAR -->
 	<section id="sidebar">
-		<a href="#" class="brand">
-			<i class='bx bxs-smile'></i>
+		<a href="../index.html" class="brand">
+			<i class='bx bx-rocket'></i>
 			<span class="text">Laboratory
 				Pro</span>
 		</a>
+
 		<ul class="side-menu top">
+
 			<li class="active">
 				<a href="#">
-					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Dashboard</span>
+					<i class='bx bx-user-circle'></i>
+					<span class="text">Integrantes</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">My Store</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
+					<i class='bx bx-list-ol'></i>
+					<span class="text">Equipos</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
+					<span class="text">Proyectos</span>
 				</a>
 			</li>
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#">
-					<i class='bx bxs-cog' ></i>
-					<span class="text">Settings</span>
-				</a>
-			</li>
-			<li>
 				<a href="#" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
+					<span class="text">Cerrar sesión</span>
 				</a>
 			</li>
 		</ul>
@@ -75,24 +62,29 @@
 	<!-- CONTENT -->
 	<section id="content">
 		<!-- NAVBAR -->
-		<nav>
-			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">Categories</a>
-			<form action="#">
+		<nav class="flex justify-between">
+			<div>
+				<i class='bx bx-menu' ></i>
+				<a href="#" class="nav-link">Administrador</a>
+			</div>
+			
+			
+			<!--Necesario para el funcionamiento de la app, pero no se ve, por eso utiliza la clase hidden-->
+			<form action="#" class="hidden">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
-				<i class='bx bxs-bell' ></i>
-				<span class="num">8</span>
-			</a>
-			<a href="#" class="profile">
-				<img src="img/people.png">
-			</a>
+
+			<div class="flex items-center gap-6 ">
+				<input type="checkbox" id="switch-mode" hidden>
+				<label for="switch-mode" class="switch-mode"></label>
+
+				<a href="./admin.html" class="profile">
+					<img src="../images/admin/people.png">
+				</a>
+			</div>
 		</nav>
 		<!-- NAVBAR -->
 
