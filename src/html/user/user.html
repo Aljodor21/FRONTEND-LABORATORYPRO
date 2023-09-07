@@ -3,20 +3,287 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estudiante</title>
 
-    <!--Hoja de estilo-->
-    <link rel="stylesheet" href="/src/css/output.css" />
-
-    <!--Fuentes de nuestros proyectos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Iconos necesarios para la pagina -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- My CSS personalizado-->
+    <link rel="stylesheet" href="/src/css/admin.css" />
+
+    <!--Css tailwindcss-->
+    <link rel="stylesheet" href="/src/css/output.css" />
+
+    <title>Estudiante</title>
   </head>
   <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="../index.html" class="brand py-2">
+        <i class="bx bx-rocket"></i>
+        <span class="text">Laboratory Pro</span>
+      </a>
 
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="#" id="b1">
+            <i class="bx bx-user-circle"></i>
+            <span class="text">Mi Proyecto</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="b2">
+            <i class="bx bx-list-ol"></i>
+            <span class="text">Avances</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out-circle"></i>
+            <span class="text">Cerrar sesión</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      
+      <!-- NAVBAR -->
+      <nav class="flex justify-between">
+        <div>
+          <i class="bx bx-menu"></i>
+          <a href="#" class="nav-link">Estudiante</a>
+        </div>
+
+        <!--Necesario para el funcionamiento de la app, pero no se ve, por eso utiliza la clase hidden-->
+        <form action="#" class="hidden">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="flex items-center gap-6">
+          <input type="checkbox" id="switch-mode" hidden />
+          <label for="switch-mode" class="switch-mode"></label>
+
+          <a href="./admin.html" class="profile">
+            <img src="../images/admin/people.png" />
+          </a>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN 1-->
+      <main id="section1">
+        <div class="head-title">
+          <div class="left">
+            <h1>Mis Proyectos</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Estudiante</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Mis Proyectos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bx-edit"></i>
+            <span class="text">
+              <h3>0</h3>
+              <p>Proyectos</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Integrantes Registrados</h3>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Integrante</th>
+                  <th>Proyecto</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Machine Learning</td>
+                  <td><span class="status process">Proceso</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status completed">Completado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+
+      <!-- MAIN 2-->
+      <main id="section2" class="hidden">
+        <div class="head-title">
+          <div class="left">
+            <h1>Integrantes</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Administrador</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Integrantes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>30</h3>
+              <p>Integrantes</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-edit"></i>
+            <span class="text">
+              <h3>0</h3>
+              <p>Proyectos</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Integrantes Registrados</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Integrante</th>
+                  <th>Proyecto</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Machine Learning</td>
+                  <td><span class="status process">Proceso</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>Null</td>
+                  <td><span class="status completed">Completado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="/src/js/admin.js"></script>
   </body>
 </html>
