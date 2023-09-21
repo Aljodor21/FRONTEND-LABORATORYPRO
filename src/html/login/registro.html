@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro</title>
 
     <!--Hoja de estilo-->
-    <link rel="stylesheet" href="/src/css/output.css"  />
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!--Fuentes de nuestros proyectos-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+</head>
 
-  <body class="font-principal">
+<body class="font-principal">
 
     <section class="bg-dark-grayish-blue/20 min-h-screen flex items-center justify-center">
 
         <!--Contenedor del login-->
-        <div class="bg-dark-blue/20 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center" >
-            
+        <div class="bg-dark-blue/20 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
+
             <!--Formulario de login-->
             <div class="md:w-1/2 px-16">
 
@@ -32,9 +30,9 @@
                     <h2 class="font-bold text-2xl text-bright-red ">
                         Registro
                     </h2>
-                    
+
                     <a href="../index.html" class="w-1/2 h-1/2 py-2.5">
-                        <img  src="/src/html/images/inicio/logo.png" alt="" >
+                        <img src="/src/html/images/inicio/logo.png" alt="">
                     </a>
                 </div>
                 <p class="text-sm mt-4 text-bright-red">
@@ -48,7 +46,25 @@
 
                     <input type="email" name="email" placeholder="Correo" class="p-2 rounded-xl border" required>
 
-                    <input type="password" name="password" placeholder="Contraseña" class="p-2 rounded-xl w-full border" required>
+                    <input type="password" name="password" placeholder="Contraseña" class="p-2 rounded-xl w-full border"
+                        required>
+
+                    <div class="text-sm">
+                        <div class="mb-2">
+                            <input type="radio" name="tipo" id="tipo1" value="1" required>
+                            <label for="tipo1">Estudiante</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="tipo" id="tipo2" value="2">
+                            <label for="tipo2">Profesor</label>
+                        </div>
+
+                    </div>
+
+
+
+
 
                     <button type="submit" class="bg-bright-red text-white py-2 hover:scale-105 duration-300 rounded-xl">
                         Registrar
@@ -70,11 +86,11 @@
                             Iniciar
                         </button>
                     </a>
-                    
-                </div>
-                
 
-                
+                </div>
+
+
+
             </div>
 
             <!--Imagen del login-->
@@ -85,5 +101,6 @@
 
     </section>
 
-  </body>
+</body>
+
 </html>
