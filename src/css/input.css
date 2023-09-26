@@ -29,4 +29,12 @@
         "social-media navigation copy"
         ;
     }
+
+    .bg-open{
+        background-image: url(/src/html/images/inicio/icon-hamburger.svg);
+    }
+
+    .bg-close{
+        background-image: url(/src/html/images/inicio/icon-close.svg);
+    }
 }

@@ -13,10 +13,6 @@ module.exports = {
         "very-dark-blue": "hsl(233, 12%, 13%)",
         "very-pale-red": "hsl(13, 100%, 96%)",
         "vary-light-gray": "hsl(0, 0%, 98%)"
-      },
-      backgroundImage :{
-        "close-menu":"url('/src/html/images/inicio/icon-close.svg')",
-        "open-menu":"url('/src/html/images/inicio/icon-hamburger.svg')"
       }
     },
     

@@ -601,6 +601,10 @@ video {
         ;
 }
 
+.bg-open{
+  background-image: url(/src/html/images/inicio/icon-hamburger.svg);
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -1041,10 +1045,6 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-open-menu {
-  background-image: url('/src/html/images/inicio/icon-hamburger.svg');
-}
-
 .from-white\/70 {
   --tw-gradient-from: rgb(255 255 255 / 0.7) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
@@ -1323,6 +1323,10 @@ video {
   grid-area: social-media;
 }
 
+.peer:checked ~ .peer-checked\:bg-close{
+  background-image: url(/src/html/images/inicio/icon-close.svg);
+}
+
 @media (min-width: 768px) {
   .md\:footer-area-md{
     grid-template-areas: 
@@ -1373,10 +1377,6 @@ video {
 .peer:checked ~ .peer-checked\:translate-x-0 {
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:checked ~ .peer-checked\:bg-close-menu {
-  background-image: url('/src/html/images/inicio/icon-close.svg');
 }
 
 @media (min-width: 768px) {
