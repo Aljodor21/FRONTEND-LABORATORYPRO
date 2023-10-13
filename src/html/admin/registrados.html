@@ -32,19 +32,18 @@
                     <span class="text">Solicitudes</span>
                 </a>
             </li>
-            <li >
+            <li class="active">
                 <a href="./registrados.html" id="b1">
                     <i class='bx bx-user'></i>
                     <span class="text">Registrados</span>
                 </a>
             </li>
-            <li class="active">
+            <li >
                 <a href="./estados.html" id="b2">
                     <i class='bx bx-stats'></i>
                     <span class="text">Estados</span>
                 </a>
             </li>
-
             <li >
                 <a href="./tipos.html" id="b2">
                     <i class='bx bx-station'></i>
@@ -98,14 +97,14 @@
         <main id="section1">
             <div class="head-title">
                 <div class="left">
-                    <h1>Estados</h1>
+                    <h1>Usuarios registrados</h1>
                     <ul class="breadcrumb">
                         <li>
                             <a href="#">Administrador</a>
                         </li>
                         <li><i class="bx bx-chevron-right"></i></li>
                         <li>
-                            <p class="text-bright-red">Estados</p>
+                            <p class="text-bright-red">Usuarios registrados</p>
                             <!--<a class="active" href="#"></a>-->
                         </li>
                     </ul>
@@ -120,34 +119,33 @@
 
                         <thead class="bg-gray-50 border-b-2 border-gray-200">
                             <tr>
-                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Código estado</th>
-                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Nombre </th>
+                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Nombre</th>
+                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Correo</th>
+                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Fecha Solicitud</th>
+                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Tipo</th>
+                                <th class="p-3 text-sm font-semibold tracking-wide text-left">Estado</th>
                                 <th class="p-3 text-sm font-semibold tracking-wide text-left">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="bg-white">
-                                <td class="p-3 text-sm text-gray-700">1</td>
+                                <td class="p-3 text-sm text-gray-700">Carlos Amparo</td>
+                                <td class="p-3 text-sm text-gray-700">carlos@elpoli.edu.co</td>
+                                <td class="p-3 text-sm text-gray-700">12/Mar/2023</td>
+                                <td class="p-3 text-sm text-gray-700">Estudiante</td>
+                                <td class="p-3 text-sm text-gray-700 ">Pendiente</td>
+
+                                <td class="p-3 font-bold flex gap-5">
+                                    <a href=""><i class='hover:bg-orange-400 bx bx-edit-alt'></i></a>
+                                    <a href=""><i class='hover:bg-red-400 bx bx-x'></i></a>
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="p-3 text-sm text-gray-700">Carlos Amparo</td>
+                                <td class="p-3 text-sm text-gray-700">carlos@elpoli.edu.co</td>
+                                <td class="p-3 text-sm text-gray-700">12/Mar/2023</td>
+                                <td class="p-3 text-sm text-gray-700">Estudiante</td>
                                 <td class="p-3 text-sm text-gray-700">Pendiente</td>
-
-                                <td class="p-3 font-bold flex gap-5">
-                                    <a href=""><i class='hover:bg-orange-400 bx bx-edit-alt'></i></a>
-                                    <a href=""><i class='hover:bg-red-400 bx bx-x'></i></a>
-                                </td>
-                            </tr>
-                            <tr class="bg-gray-50">
-                                <td class="p-3 text-sm text-gray-700">2</td>
-                                <td class="p-3 text-sm text-gray-700">Activo</td>
-
-                                <td class="p-3 font-bold flex gap-5">
-                                    <a href=""><i class='hover:bg-orange-400 bx bx-edit-alt'></i></a>
-                                    <a href=""><i class='hover:bg-red-400 bx bx-x'></i></a>
-                                </td>
-                            </tr>
-
-                            <tr class="bg-gray-50">
-                                <td class="p-3 text-sm text-gray-700">3</td>
-                                <td class="p-3 text-sm text-gray-700">Rechazado</td>
 
                                 <td class="p-3 font-bold flex gap-5">
                                     <a href=""><i class='hover:bg-orange-400 bx bx-edit-alt'></i></a>
@@ -157,39 +155,6 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-
-            <div
-              class="container w-full bg-bright-red mt-6 rounded-xl shadow-2xl shadow-black flex justify-center"
-            >
-              <form action="" method="POST" class="flex flex-col p-6 gap-4">
-                <input
-                  type="number"
-                  name=""
-                  id=""
-                  placeholder="Código estado *"
-                  class="rounded-md text-center p-2 mb-4 text-black"
-                  required
-                />
-
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Nombre estado *"
-                  class="rounded-md text-center p-2 mb-4 text-black"
-                  required
-                />
-
-                
-
-                <button
-                  type="submit"
-                  class="w-full text-center py-2 rounded bg-dark-blue text-white hover:bg-dark-grayish-blue"
-                >
-                  Crear
-                </button>
-              </form>
             </div>
 
         </main>
