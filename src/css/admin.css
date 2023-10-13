@@ -474,6 +474,10 @@ body {
 	color: var(--light);
 	border-radius: 20px;
 	font-weight: 700;
+	display: flex;
+	width: 70%;
+	align-items: center;
+	justify-content: center;
 }
 #content main .table-data .order table tr td .status.completed {
 	background: var(--orange);
