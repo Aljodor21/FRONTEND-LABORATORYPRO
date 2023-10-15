@@ -110,6 +110,7 @@
         </ul>
 
         <div class="table-data">
+
           <div class="order">
             <div class="head">
               <h3>Integrantes Registrados</h3>
@@ -119,6 +120,7 @@
                 <tr>
                   <th>Integrante</th>
                   <th>Fecha Inicio</th>
+                  <th>Código</th>
                 </tr>
               </thead>
               <tbody>
@@ -128,6 +130,7 @@
                     <p>John Doe</p>
                   </td>
                   <td>Null</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>
@@ -135,6 +138,7 @@
                     <p>John Doe</p>
                   </td>
                   <td>Machine Learning</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>
@@ -142,6 +146,7 @@
                     <p>John Doe</p>
                   </td>
                   <td>Null</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>
@@ -149,6 +154,7 @@
                     <p>John Doe</p>
                   </td>
                   <td>Null</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>
@@ -156,6 +162,7 @@
                     <p>John Doe</p>
                   </td>
                   <td>Null</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>
@@ -163,37 +170,106 @@
                     <p>John Doe</p>
                   </td>
                   <td>Null</td>
+                  <td>1</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="todo h-full">
-            <div class="head">
-              <h3>Crear Proyectos</h3>
+          <!--Asignar integrantes-->
+          <div class="todo overflow-auto ">
+            <div class="head ">
+              <h3 class=" ">Asignar Integrantes</h3>
             </div>
-
+  
+            <div class="rounded-lg  shadow-xl">
+              <table class="table-auto w-full">
+                <thead class="border-b-2 border-black">
+                  <tr>
+                    <th class="p-3 text-sm font-semibold tracking-wide text-left">
+                      Proyecto
+                    </th>
+                    <th class="p-3 text-sm font-semibold tracking-wide text-left">
+                      Código
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="gap-6">
+                  <tr>
+                    <td>Malcolm Lockyer</td>
+                    <td>1961</td>
+                  </tr>
+                  <tr>
+                    <td>The Eagles</td>
+                    <td>1972</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>1975</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>1975</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>1975</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>1975</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>1975</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>1975</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
             <div
-              class="container w-full h-full bg-bright-red mt-6 rounded-xl shadow-2xl shadow-black flex justify-center "
+              class="container w-full bg-bright-red mt-6 rounded-xl shadow-2xl shadow-black flex justify-center"
             >
               <form action="" method="POST" class="flex flex-col p-6 gap-4">
                 <input
-                  type="text"
+                  type="number"
                   name=""
                   id=""
-                  placeholder="Nombre de proyecto"
+                  placeholder="Código de proyecto *"
                   class="rounded-md text-center p-2 mb-4 text-black"
                   required
                 />
-
-                <textarea
-                  id="message"
-                  rows="6"
-                  class="block p-2 mb-4 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-                  placeholder="Ingresa la introducción del proyecto..."
+  
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="Código integrante 1 *"
+                  class="rounded-md text-center p-2 mb-4 text-black"
                   required
-                ></textarea>
-
+                />
+  
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="Código integrante 2 *"
+                  class="rounded-md text-center p-2 mb-4 text-black"
+                  required
+                />
+  
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="Código integrante 3"
+                  class="rounded-md text-center p-2 mb-4 text-black"
+                />
+  
                 <button
                   type="submit"
                   class="w-full text-center py-2 rounded bg-dark-blue text-white hover:bg-dark-grayish-blue"
