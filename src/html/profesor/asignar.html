@@ -17,6 +17,7 @@
 
     <title>Docente</title>
   </head>
+
   <body>
     <!-- SIDEBAR -->
     <section id="sidebar">
@@ -26,14 +27,14 @@
       </a>
 
       <ul class="side-menu top">
-        <li class="active">
+        <li>
           <a href="./profesorP.html" id="b3">
             <i class="bx bxs-group"></i>
             <span class="text">Proyectos</span>
           </a>
         </li>
 
-        <li >
+        <li class="active">
           <a href="./profesor.html" id="b1">
             <i class="bx bx-user-circle"></i>
             <span class="text">Integrantes</span>
@@ -74,7 +75,7 @@
           <input type="checkbox" id="switch-mode" hidden />
           <label for="switch-mode" class="switch-mode"></label>
 
-          <a href="../perfil/perfil.html" class="profile">
+          <a href="profesor.html" class="profile">
             <img src="/src/html/images/admin/people.png" />
           </a>
         </div>
@@ -85,14 +86,14 @@
       <main id="section1">
         <div class="head-title">
           <div class="left">
-            <h1>Proyectos</h1>
+            <h1>Integrantes</h1>
             <ul class="breadcrumb">
               <li>
                 <a href="#">Docente</a>
               </li>
               <li><i class="bx bx-chevron-right"></i></li>
               <li>
-                <p class="text-bright-red">Proyectos</p>
+                <p class="text-bright-red">Asignar integrantes</p>
                 <!--<a class="active" href="#"></a>-->
               </li>
             </ul>
@@ -100,75 +101,119 @@
         </div>
 
         <ul class="box-info">
-          <li>
-            <i class="bx bx-edit"></i>
+          <li class="flex justify-between">
             <span class="text">
-              <h3>0</h3>
-              <p>Proyectos</p>
+              <h3>Nombre del proyecto</h3>
+              <p>Project name</p>
             </span>
+            <div class="flex gap-2">
+              <i class="bx bxs-group"></i>
+              <span class="text">
+                <h3>30</h3>
+                <p>Integrantes asociados</p>
+              </span>
+            </div>
           </li>
         </ul>
 
         <div class="table-data">
+          <!--Tabla de estudiantes asociados-->
           <div class="order">
             <div class="head">
-              <h3>Proyectos Registrados</h3>
+              <h3>Estudiantes asociados</h3>
             </div>
-
             <table>
               <thead>
                 <tr>
-                  <th>Proyecto</th>
+                  <th>Estudiante</th>
+                  <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><a href="./viewP.html" class="hover:bg-bright-red">Null</a></td>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>
+                    <a title="Eliminar" href="" class="hover:bg-red-400">
+                      <i class="bx bx-x"></i>
+                    </a>
+                  </td>
                 </tr>
                 <tr>
-                  <td><a href="./viewP.html" class="hover:bg-bright-red">Machine Lerning</a></td>
-                </tr>
-                <tr>
-                  <td><a href="./viewP.html" class="hover:bg-bright-red">Null</a></td>
+                  <td>
+                    <img src="/src/html/images/admin/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>
+                    <a href="" class="hover:bg-red-400">
+                      <i class="bx bx-x"></i>
+                    </a>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="todo h-full">
+          <!--Tabla para asociar estudiantes-->
+          <div class="order">
             <div class="head">
-              <h3>Crear Proyectos</h3>
+              <h3>Estudiantes disponibles</h3>
             </div>
+            <form action="">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Estudiante</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="/src/html/images/admin/people.png" />
+                      <p>John Doe</p>
+                    </td>
+                    <td>
+                      <label for="opcion1">
+                        <input
+                          type="checkbox"
+                          id="opcion1"
+                          name="opcion1"
+                          value="opcion1"
+                        />
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="/src/html/images/admin/people.png" />
+                      <p>John Doe</p>
+                    </td>
+                    <td>
+                      <label for="opcion2">
+                        <input
+                          type="checkbox"
+                          id="opcion2"
+                          name="opcion2"
+                          value="opcion2"
+                        />
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <div
-              class="container w-full h-full bg-bright-red mt-6 rounded-xl shadow-2xl shadow-black flex justify-center"
-            >
-              <form action="" method="POST" class="flex flex-col p-6 gap-4">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Nombre de proyecto"
-                  class="rounded-md text-center p-2 mb-4 text-black"
-                  required
-                />
-
-                <textarea
-                  id="message"
-                  rows="6"
-                  class="block p-2 mb-4 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-                  placeholder="Ingresa la introducción del proyecto..."
-                  required
-                ></textarea>
-
+              <div class="flex justify-center items-center mt-4">
                 <button
+                  class="py-2 rounded w-[50%] text-center bg-bright-red text-white hover:bg-dark-blue hover:text-bright-red"
                   type="submit"
-                  class="w-full text-center py-2 rounded bg-dark-blue text-white hover:bg-dark-grayish-blue"
                 >
-                  Crear
+                  Agregar
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </main>
